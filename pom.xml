@@ -30,6 +30,7 @@
 
 			<plugin>
 				<artifactId>maven-eclipse-plugin</artifactId>
+				<version>2.10</version>
 				<configuration>
 					<downloadSources>true</downloadSources>
 					<downloadJavadocs>true</downloadJavadocs>
@@ -40,6 +41,7 @@
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-compiler-plugin</artifactId>
+				<version>3.5.1</version>
 				<configuration>
 					<source>${java.version}</source>
 					<target>${java.version}</target>
@@ -51,4 +53,9 @@
 
 	</build>
 
+	<modules>
+		<module>fiveware-test-model</module>
+		<module>fiveware-test-service</module>
+		<module>fiveware-test-web</module>
+	</modules>
 </project>
